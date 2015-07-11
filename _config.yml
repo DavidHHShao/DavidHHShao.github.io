@@ -1,0 +1,58 @@
+# auto: true
+
+markdown: rdiscount
+highlighter: pygments
+paginate: 8
+permalink: /:title
+encoding: UTF-8
+
+title: David Shao's Zone
+url: http://davidhhshao.github.io
+feed: /atom.xml
+author_info: <a href="http://davidhhshao.github.io/">David Honghao Shao</a>
+
+myblog:
+  gavatar: images/1.jpg
+  gpname: davidhhshao
+  linkedin: http://www.linkedin.com/in/davidhonghaoshao
+  github: https://github.com/davidhhshao
+  email: mailto:honghao.shao@gmail.com
+  coverimgs: []
+  postbgimg: []
+
+prose:
+  rooturl: "_posts"
+  siteurl: "http://davidhhshao.github.io/"
+  media: "images"
+  metadata:
+    _posts/blog:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          placeholder: "Input your title here"
+          type: "text"
+
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
+          placeholder: "Input your abstract here"
+          type: "text"
+
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
+
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"

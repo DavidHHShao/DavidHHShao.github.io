@@ -27,8 +27,8 @@ def gen_all_posts_with_icon():
             try:
                 qr.make()
             except:
-                print 'qr.make() also failed , continue to next one '
-                print 'failed for {} '.format(post)
+                print ('qr.make() also failed , continue to next one ')
+                print ('failed for {} '.format(post))
                 continue
             
             img = qr.make_image()
@@ -49,7 +49,7 @@ def gen_all_posts_with_icon():
             # img.paste(icon, (w, h), mask=icon)
             img.paste(icon, (w, h))
             img.save("../images/share/{}.jpg".format(post))
-            print 'generate share code for: ' + post + ' success'
+            print ('generate share code for: ' + post + ' success')
 
 
 def gen_all_posts():
@@ -65,7 +65,7 @@ def gen_all_posts():
             img = qrcode.make(url, version = 1, box_size = 5)
             # img.resize(200, 200)
             img.save("../images/share/{}.jpg".format(post))
-            print 'generate share code for: ' + post + ' success at: ' + url
+            print ('generate share code for: ' + post + ' success at: ' + url)
             
 
 def insert_qrcode_into_blog():
@@ -82,7 +82,7 @@ def insert_qrcode_into_blog():
             tmp.write(content)
             tmp.close()     
             
-            print 'insert_qrcode_into_blog {}/{} done ...'.format(i, post)
+            print ('insert_qrcode_into_blog {}/{} done ...'.format(i, post))
             # return 
 
 def remove_qrcode_from_blog():

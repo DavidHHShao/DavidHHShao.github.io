@@ -59,7 +59,7 @@ $ java -version
       OpenJDK 64-Bit Server VM (build 25.45-b02, mixed mode)
 ```  
 
-## 2. Install Scala  (uder root)
+## 2. Install Scala  (under root)
 
 ```
 # download file 
@@ -90,8 +90,7 @@ $ scala -version
 ```  
 
 　　
-
-## 3. Install Spark with hadoop (uder user)
+## 3. Install Spark with hadoop (under user)
 
 ```
 # switch to user 
